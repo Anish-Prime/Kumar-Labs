@@ -1,103 +1,91 @@
-import React, { useState } from "react";
-import piImg from '../images/People/image.png';
-import mem1 from '../images/People/Rocky-Barilla-scaled.jpg';
-import mem2 from "../images/People/20221003-Lab-Portraits-0002-scaled-e1700783905429.jpg";
-import mem3 from "../images/People/Hee-Sun-Choi-scaled.jpg";
-import mem4 from "../images/People/Joshua-Choi-scaled.jpg";
-import mem5 from "../images/People/Xiaokai-Ding-scaled.jpg";
-import mem6 from "../images/People/Picture1-e1687470450359.jpg";
-import mem7 from "../images/People/Ed-Greenfield-scaled.jpg";
-import mem8 from "../images/People/Mio.jpg";
+import React, { use, useState } from "react";
+import piImg from '../images/People/Dr.-Rakesh-Kumar.png';
+
+import mem1 from '../images/People/Lab Members/Ms.-Minerva-Sharma.png';
+import mem2 from "../images/People/Lab Members/Mr.-Rajeshwer-S-Jamwal.png";
+import mem3 from "../images/People/Lab Members/Mr.-Bhawani-Sharma.png";
+import mem4 from "../images/People/Lab Members/Ms.-Pushpa-Oraon.png";
+
+import alm1 from "../images/People/Alumni/Dr. Ashna Nagpal.png";
+import alm2 from "../images/People/Alumni/Dr. Sonali Verma.png";
+import alm3 from "../images/People/Alumni/Dr. GR Bhat.png";
+import alm4 from "../images/People/Alumni/Dr. Amrita Bhat.png";
+import alm5 from "../images/People/Alumni/Dr. Divya Bakshi.png";
+import alm6 from "../images/People/Alumni/Dr. Bhanu Sharma.png";
 
 export function People() {
     
     const [showModal, setShowModal] = useState(false);
-    const [currentMemberIndex, setCurrentMemberIndex] = useState(0);
+    const [modalChoice, setModalChoice] = useState(true);
+    const [currentIndex, setCurrentIndex] = useState(0);
 
     const members = [
         {
-        name: "Rocky Barilla",
+        name: "Ms. Minerva Sharma",
         image: mem1,
-        description: "Graduate student studying autoimmune inflammation and neuro-immune interaction."
+        labStatus: "Research Scholar",
+        academicQualification: "Ph.D. Ongoing",
+        description: "I am Minerva, a researcher with a strong academic background in Biotechnology, holding both graduate and postgraduate degrees in the field. Currently, I am pursuing a Ph.D. in Cancer Genetics, with my research focusing on the genetic mechanisms of ovarian cancer. My passion lies in understanding how these mechanisms drive cancer progression and finding ways to translate this knowledge into therapeutic advancements. Beyond my work, I am a nature lover who finds joy in traveling, exploring new places, and immersing myself in different cultures. I enjoy observing people and learning about their traditions, which inspires me and enriches my perspective on life. Balancing my academic pursuits with these personal interests keeps me grounded and fuels my curiosity.\n"
         },
         {
-        name: "Michelle Bookstaver, PHD",
+        name: "Mr. Rajeshwer S Jamwal",
         image: mem2,
-        description: "Postdoctoral researcher focusing on T cell biology and signaling pathways in immune regulation."
+        labStatus: "Senior Research Fellow-CSIR",
+        academicQualification: "Ph.D. Ongoing",
+        description: "I completed my Bachelor’s in Biotechnology from University of Jammu and my Master’s in Science in Biotechnology, specializing in Genetics, from Shri Mata Vaishno Devi University, India. Currently, I am pursuing my Ph.D. at SMVDU as a Senior Research Fellow under CSIR, focusing on the role of DNA damage-associated genes in non-small cell lung cancer. My work combines advanced molecular biology techniques and bioinformatics to understand genetic predispositions and cancer mechanisms.\n Additionally, I have a deep passion for riding bikes and exploring new destinations, which not only fuels my adventurous spirit but also inspires my curiosity about the world around me. Whether it's navigating winding mountain trails or discovering hidden cultural gems, these experiences provide fresh perspectives that often influence my approach towards Life and  Research."
         },
         {
-        name: "Hee Sun Choi, PHD",
+        name: "Mr. Bhawani Sharma",
         image: mem3,
-        description: "Investigates genetic mechanisms underlying autoimmunity and immune tolerance."
+        labStatus: "Research Scholar",
+        academicQualification: "Ph.D. Ongoing",
+        description: "Driven by a curiosity for the complexities of human genetics, I have pursued a dedicated academic journey. After completing my schooling and undergraduate studies in Jammu and earning a master’s degree in Biotechnology from SMVDU, I am now engaged in PhD research at SMVDU. My work delves into the genetic basis of male infertility, focusing on Y chromosome microdeletions, mitochondrial alterations, and genetic mutations. By combining advanced genomic tools with community health initiatives, I aim to contribute to both scientific understanding and impactful health solutions. Originally from the picturesque Rajouri district, I value traveling and exploring new experiences as sources of inspiration. Outside of research, I enjoy connecting with diverse perspectives, enriching my outlook on life and science.\n"
         },
         {
-        name: "Joshua Choi, PHD",
+        name: "Ms. Pushpa Oraon",
         image: mem4,
-        description: "Research fellow examining the impact of T cell exhaustion in chronic diseases."
-        },
-        {
-        name: "Xiaokai Ding, PHD",
-        image: mem5,
-        description: "Studies the role of cytokine networks and their dysregulation in inflammation."
-        },
-        {
-        name: "Karen Dixon, PHD",
-        image: mem6,
-        description: "Postdoc with interest in regulatory T cells and autoimmune pathogenesis."
-        },
-        {
-        name: "Ed Greenfield, PHD",
-        image: mem7,
-        description: "Senior researcher exploring immunopathology using animal models."
-        },
-        {
-        name: "Mio Hamatani, MD, PHD",
-        image: mem8,
-        description: "Clinician-scientist working at the intersection of neurology and immunology."
+        labStatus: "Research Scholar",
+        academicQualification: "Ph.D. Ongoing",
+        description: "I am  passionate educator committed to shaping the future of nursing. Alongside my academic role, I am currently pursuing a part-time Ph.D., which allows me to balance my teaching responsibilities with my dedication to research and professional growth. With years of experience in nursing education, I strive to inspire and guide my students by combining theoretical knowledge with practical applications.\n My doctoral research focuses on addressing critical challenges in healthcare, with the aim of contributing to evidence-based practices that improve patient outcomes and elevate the standards of nursing education. Balancing my dual roles as an educator and a researcher has been both challenging and rewarding, fuelling my passion for lifelong learning. I actively participate in academic collaborations, workshops, and conferences to stay updated and share insights with the wider community."
         }
     ];
 
     const alumni = [
         {
-            name: "Edward Greenfield",
-            description: "PhD – Director, Antibody Core Facility, Dana-Farber Cancer Institute",
-            startYear: 1989,
-            endYear: 1992
+        name: "Dr. Ashna Nagpal",
+        image: alm1,
+        description: "Awarded"
         },
         {
-            name: "Edward Greenfield",
-            description: "PhD – Director, Antibody Core Facility, Dana-Farber Cancer Institute",
-            startYear: 1989,
-            endYear: 1992
+        name: "Dr. Sonali Verma",
+        image: alm2,
+        description: "Awarded"
         },
         {
-            name: "Edward Greenfield",
-            description: "PhD – Director, Antibody Core Facility, Dana-Farber Cancer Institute",
-            startYear: 1989,
-            endYear: 1992
+        name: "Dr. GR Bhat",
+        image: alm3,
+        description: "Awarded"
         },
         {
-            name: "Edward Greenfield",
-            description: "PhD – Director, Antibody Core Facility, Dana-Farber Cancer Institute",
-            startYear: 1989,
-            endYear: 1992
+        name: "Dr. Amrita Bhat",
+        image: alm4,
+        description: "Awarded"
         },
         {
-            name: "Edward Greenfield",
-            description: "PhD – Director, Antibody Core Facility, Dana-Farber Cancer Institute",
-            startYear: 1989,
-            endYear: 1992
+        name: "Dr. Divya Bakshi",
+        image: alm5,
+        description: "Awarded"
         },
         {
-            name: "Edward Greenfield",
-            description: "PhD – Director, Antibody Core Facility, Dana-Farber Cancer Institute",
-            startYear: 1989,
-            endYear: 1992
+        name: "Dr. Bhanu Sharma",
+        image: alm6,
+        description: "Awarded"
         }
     ];
 
-    const openModal = (index) => {
-        setCurrentMemberIndex(index);
+    const openModal = (index,choice) => {
+        setModalChoice(choice);
+        setCurrentIndex(index);
         setShowModal(true);
         document.body.classList.add("overflow-hidden");
     };
@@ -108,14 +96,24 @@ export function People() {
     };
 
     const previousMember = () => {
-        setCurrentMemberIndex((currentMemberIndex - 1 + members.length) % members.length);
+        if(modalChoice)
+        setCurrentIndex((currentIndex - 1 + members.length) % members.length);
+        else
+        setCurrentIndex((currentIndex - 1 + alumni.length) % alumni.length);
     };
 
     const nextMember = () => {
-        setCurrentMemberIndex((currentMemberIndex + 1) % members.length);
+        if(modalChoice)
+        setCurrentIndex((currentIndex + 1) % members.length);
+        else
+        setCurrentIndex((currentIndex + 1) % alumni.length);
     };
 
-    const current = members[currentMemberIndex];
+    let current;
+    if(modalChoice)
+    current = members[currentIndex];
+    else
+    current = alumni[currentIndex];
 
     function toggleAlumni() {
         const list = document.getElementById("alumni-list");
@@ -138,23 +136,23 @@ export function People() {
 
             <section className="max-w-6xl mx-auto px-4 py-12">
                 <h2 className="text-3xl text-[#000f3a] font-semibold mb-6 border-b-2 border-[#cccccc] pb-2">PRINCIPAL INVESTIGATOR</h2>
-                <div className="flex flex-col md:flex-row items-start gap-8 bg-[#eeeeee] shadow rounded-lg p-6">
-                    <img src={piImg} alt="Vijay K. Kuchroo" className="w-48 h-auto rounded-lg shadow-md" />
+                <div className="flex flex-col md:flex-row items-start gap-8 bg-gray-50 shadow rounded-lg p-6">
+                    <img src={piImg} alt="Dr. Rakesh Kumar" className="w-48 h-auto bg-white rounded-full shadow-md" />
                     <div className="w-full">
-                    <div className="flex items-center justify-between">
-                        <h3 className="text-2xl text-[#000f3a] font-bold">VIJAY K. KUCHROO, DVM, PHD</h3>
-                        <button onClick={togglePI} className="text-xl font-bold bg-[#003865] text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-[#000f3a] transition">
+                    <div className="relative flex-col items-center justify-between">
+                        <h3 className="text-4xl text-[#000f3a] font-bold">Dr. Rakesh Kumar</h3>
+                        <h4 className="text-3xl text-[#003865] font-semibold">Assistant Professor, SMVDU</h4>
+                        <button onClick={togglePI} className="absolute top-4 right-6 text-xl font-bold bg-[#003865] text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-[#000f3a] transition">
                         <span id="pi-toggle-icon">+</span>
                         </button>
                     </div>
-                    <p id="pi-description" className="mt-4 text-gray-800 leading-relaxed hidden">
-                        Dr. Vijay Kuchroo is the Samuel L. Wasserstrom Professor of Neurology at Harvard Medical School, Senior Scientist at Brigham and Women’s Hospital, and Co-Director of the Center for Infection and Immunity, at the Brigham Research Institutes, Boston. He is also an associate member of the Broad Institute, and a participant in a Klarman Cell Observatory project that focuses on T cell differentiation. He is the founding Director of the Evergrande Center for Immunologic Diseases at Harvard Medical School and Brigham and Women’s Hospital. His major research interests include autoimmune diseases—particularly the role of co-stimulation—the genetic basis of experimental autoimmune encephalomyelitis and multiple sclerosis, as well as cell surface molecules and regulatory factors that regulate the induction of T cell tolerance and dysfunction.
+                    <p id="pi-description" className="mt-4 text-gray-700 text-xl text-justify leading-relaxed hidden">
+                        My research focuses on deciphering the genetic and molecular mechanisms underlying infertility and cancer through advanced genomic tools and epigenetic profiling. Over the years, I have successfully led numerous national and international research projects funded by esteemed agencies such as ICMR, DST, and DBT, securing substantial grants.
+                        I am deeply committed to mentoring the next generation of scientists and fostering collaborative initiatives. I have organized multiple national and international workshops and serve on editorial boards of reputed journals. 
+                        A key aspect of my vision is to bridge the gap between laboratory discoveries and their real-world applications, driving advancements in healthcare and biotechnology.
                     </p>
-                    <div className="mt-4 text-gray-900 font-semibold">
-                        Samuel L. Wasserstrom Professor of Neurology | Harvard Medical School<br/>
-                        Director, the Gene Lay Institute of Immunology and Inflammation<br/>
-                        Senior Scientist | Brigham and Women’s Hospital<br/>
-                        Institute Member | Broad Institute of Genetics and Genomics
+                    <div className="mt-4 font-medium text-gray-900 text-justify text-xl ">
+                        I earned my Ph.D. from AIIMS, New Delhi, where my pioneering work laid the foundation for exploring the intricate genetic mechanisms of infertility. My academic journey then led to prestigious postdoctoral fellowships at the UTSW Medical Center in Dallas, USA, and Washington University in St. Louis, USA, further enriching my expertise in reproductive biology and cancer genomics.
                     </div>
                     </div>
                 </div>
@@ -165,9 +163,11 @@ export function People() {
                 <div id="member-grid" className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
                     {
                         members.map( (member, memIndex) =>
-                                    <div key={memIndex} className="relative text-center bg-[#eeeeee] p-4 rounded-lg shadow-md transform transition hover:shadow-lg cursor-pointer hover-plus" onClick={() => openModal(memIndex)}>
-                                        <img src={ member.image } alt={ member.name } className="h-[93%] object-cover rounded mb-2" />
-                                        <h4 className="font-semibold text-[#003865]">{ member.name }</h4>
+                                    <div key={memIndex} className="relative no-scrollbar text-center bg-gray-100 p-4 pb-2 rounded-lg overflow-auto shadow-md transform transition hover:shadow-lg cursor-pointer hover-plus" onClick={() => openModal(memIndex, true)}>
+                                        <img src={ member.image } alt={ member.name } className="h-[75%] object-cover rounded-full mb-2" />
+                                        <h3 className="font-semibold text-[#000f3a] md:text-xl">{ member.name }</h3>
+                                        <h4 className="text-[#003865]">{ member.labStatus }</h4>
+                                        <h4 className="text-black">{ member.academicQualification }</h4>
                                     </div> )
                     }
                 </div>
@@ -178,17 +178,16 @@ export function People() {
                 <button onClick={toggleAlumni} id="alumni-toggle-btn" className="mb-4 px-4 py-2 bg-white border border-gray-400 text-[#003865] rounded hover:bg-[#f0f0f0] transition">
                     SHOW FULL LIST
                 </button>
-                <ul id="alumni-list" className="list-disc pl-6 space-y-3 text-[#003865] hidden">
+                <div id="alumni-list" className="hidden grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
                     {
                         alumni.map( (alum, alumIndex) =>
-                                    <li key={alumIndex}>
-                                        <strong>{alum.startYear}–{alum.endYear}:</strong>
-                                        <p className="text-black"> 
-                                            {alum.name}, {alum.description}
-                                        </p>
-                                    </li> )
+                                    <div key={alumIndex} className="relative no-scrollbar text-center bg-gray-100 p-4 pb-2 rounded-lg overflow-auto shadow-md transform transition hover:shadow-lg cursor-pointer hover-plus" onClick={() => openModal(alumIndex, false)}>
+                                        <img src={ alum.image } alt={ alum.name } className="h-[80%] object-cover rounded-lg mb-2" />
+                                        <h3 className="font-semibold text-[#003865] md:text-xl">{ alum.name }</h3>
+                                        <h4 className="text-black">{ alum.description }</h4>
+                                    </div> )
                     }
-                </ul>
+                </div>
             </section>
 
             {/* Modal Overlay */}
@@ -216,7 +215,7 @@ export function People() {
                             <img
                                 src={current.image}
                                 alt={current.name}
-                                className="w-60 h-70 object-cover rounded shadow-md"
+                                className="w-70 h-70 rounded-2xl object-cover shadow-md"
                             />
     
                             <button
@@ -228,7 +227,7 @@ export function People() {
     
                             <div className="text-center mt-4">
                                 <h3 className="text-2xl font-semibold mb-2">{current.name}</h3>
-                                <p className="text-gray-200 text-sm">{current.description}</p>
+                                <p className="text-gray-200 whitespace-pre-line text-justify p-4 text-sm">{current.description}</p>
                             </div>
                             </div>
                         </div>
@@ -236,15 +235,17 @@ export function People() {
     
                     {/* 💻 Desktop Modal (sm+) */}
                     <div className="hidden sm:flex items-center justify-center fixed inset-0 bg-black/10 z-50">
-                        <div className="bg-[#2a2a2a]/95 p-4 md:p-6 rounded-xl max-w-3xl w-[90%] h-[95vh] overflow-y-auto shadow-xl text-center text-white relative">
+                        <div className="bg-[#2a2a2a]/95 p-8 md:p-12 rounded-xl max-w-3xl w-[90%] h-[95vh] overflow-y-auto shadow-xl text-center text-white flex-col justify-center relative">
                             <button onClick={closeModal} className="absolute top-4 right-6 text-white hover:text-red-400 text-3xl font-bold">&times;</button>
-                            <div className="flex justify-center mb-2">
+                            <div className="h-[65vh] flex justify-center mb-2">
                                 <button onClick={previousMember} className="w-[20%] h-[8vh] my-auto text-3xl text-black bg-gray-100 rounded hover:bg-gray-200">&#8592;</button>
-                                <img src={current.image} alt={current.name} className="h-[75vh] mx-auto object-cover rounded " />
+                                <img src={current.image} alt={current.name} className="w-[50%] h-[60vh] mx-auto object-cover rounded-2xl" />
                                 <button onClick={nextMember} className="w-[20%] h-[8vh] my-auto text-3xl text-black bg-gray-100 rounded hover:bg-gray-200">&#8594;</button>
                             </div>
-                            <h3 className="text-3xl font-bold mb-2">{current.name}</h3>
-                            <p className="text-gray-200 max-w-3xl text-lg mx-auto">{current.description}</p>   
+                            <div className="h-[20vh] flex-col justify-center items-center mb-2">
+                                <h3 className="text-3xl font-bold mb-2">{current.name}</h3>
+                                <p className="text-gray-100 max-w-3xl whitespace-pre-line text-justify p-4 text-lg mx-auto">{current.description}</p> 
+                            </div>  
                         </div>
                     </div>
                 </>
