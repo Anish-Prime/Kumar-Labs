@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 
+import img1 from '../images/Homepage/img1.webp';
+import img2 from '../images/Homepage/img2.jpg';
+import img3 from '../images/Homepage/img3.webp';
+import img4 from '../images/Homepage/img4.webp';
+import img5 from '../images/Homepage/img5.webp';
+
 export function Homepage() {
   const img = [
-    "/src/images/Homepage/img1.webp",
-    "/src/images/Homepage/img2.jpg",
-    "/src/images/Homepage/img3.webp",
-    "/src/images/Homepage/img4.webp",
-    "/src/images/Homepage/img5.webp",
+    img1, img2, img3, img4, img5
   ];
 
   return (
