@@ -36,7 +36,7 @@ function Slideshow({ img }) {
   
   return (
     <div className="col-span-12">
-      <div className="bg-[#000f3a] h-40 "><div className="pl-10 pt-14 text-semibold text-white text-2xl md:text-3xl flex md:pl-30"><div className="underline decoration-yellow-500 underline-offset-23 decoration-1">KUM</div>AR LABS</div></div>
+      <div className="bg-[#000f3a] h-40 "><div className="pl-10 pt-14 text-semibold text-white text-2xl md:text-3xl flex md:pl-30"><div className="underline decoration-yellow-500 underline-offset-23 decoration-1">KUM</div>AR'S LAB</div></div>
       <img
         src={img[index]}
         alt={`Slide ${index + 1}`}

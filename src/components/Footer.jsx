@@ -8,7 +8,7 @@ export function Footer(){
           <div class="mb-6 md:mb-0">
               <a href="/" class="flex items-center">
                   <img src={logo} class="h-12 me-3" alt="FlowBite Logo" />
-                  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">KUMAR LABS</span>
+                  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">KUMAR'S LAB</span>
               </a>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">

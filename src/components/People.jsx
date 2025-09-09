@@ -136,24 +136,24 @@ export function People() {
 
             <section className="max-w-6xl mx-auto px-4 py-12">
                 <h2 className="text-3xl text-[#000f3a] font-semibold mb-6 border-b-2 border-[#cccccc] pb-2">PRINCIPAL INVESTIGATOR</h2>
-                <div className="flex flex-col md:flex-row items-start gap-8 bg-gray-50 shadow rounded-lg p-6">
+                <div className="relative flex flex-col md:flex-row items-start gap-8 bg-gray-50 shadow rounded-lg p-6">
                     <img src={piImg} alt="Dr. Rakesh Kumar" className="w-48 h-auto bg-white rounded-full shadow-md" />
-                    <div className="w-full">
-                    <div className="relative flex-col items-center justify-between">
-                        <h3 className="text-4xl text-[#000f3a] font-bold">Dr. Rakesh Kumar</h3>
-                        <h4 className="text-3xl text-[#003865] font-semibold">Assistant Professor, SMVDU</h4>
-                        <button onClick={togglePI} className="absolute top-4 right-6 text-xl font-bold bg-[#003865] text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-[#000f3a] transition">
+                    <button onClick={togglePI} className="absolute top-4 right-6 z-10 text-xl font-bold bg-[#003865] text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-[#000f3a] transition">
                         <span id="pi-toggle-icon">+</span>
-                        </button>
-                    </div>
-                    <p id="pi-description" className="mt-4 text-gray-700 text-xl text-justify leading-relaxed hidden">
-                        My research focuses on deciphering the genetic and molecular mechanisms underlying infertility and cancer through advanced genomic tools and epigenetic profiling. Over the years, I have successfully led numerous national and international research projects funded by esteemed agencies such as ICMR, DST, and DBT, securing substantial grants.
-                        I am deeply committed to mentoring the next generation of scientists and fostering collaborative initiatives. I have organized multiple national and international workshops and serve on editorial boards of reputed journals. 
-                        A key aspect of my vision is to bridge the gap between laboratory discoveries and their real-world applications, driving advancements in healthcare and biotechnology.
-                    </p>
-                    <div className="mt-4 font-medium text-gray-900 text-justify text-xl ">
-                        I earned my Ph.D. from AIIMS, New Delhi, where my pioneering work laid the foundation for exploring the intricate genetic mechanisms of infertility. My academic journey then led to prestigious postdoctoral fellowships at the UTSW Medical Center in Dallas, USA, and Washington University in St. Louis, USA, further enriching my expertise in reproductive biology and cancer genomics.
-                    </div>
+                    </button>
+                    <div className="w-full">
+                        <div className="relative flex-col items-center justify-between">
+                            <h3 className="text-4xl text-[#000f3a] font-bold">Dr. Rakesh Kumar</h3>
+                            <h4 className="text-3xl text-[#003865] font-semibold">Assistant Professor, SMVDU</h4>
+                        </div>
+                        <p id="pi-description" className="mt-4 text-gray-700 text-xl text-justify leading-relaxed hidden">
+                            My research focuses on deciphering the genetic and molecular mechanisms underlying infertility and cancer through advanced genomic tools and epigenetic profiling. Over the years, I have successfully led numerous national and international research projects funded by esteemed agencies such as ICMR, DST, and DBT, securing substantial grants.
+                            I am deeply committed to mentoring the next generation of scientists and fostering collaborative initiatives. I have organized multiple national and international workshops and serve on editorial boards of reputed journals. 
+                            A key aspect of my vision is to bridge the gap between laboratory discoveries and their real-world applications, driving advancements in healthcare and biotechnology.
+                        </p>
+                        <div className="mt-4 font-medium text-gray-900 text-justify text-xl ">
+                            I earned my Ph.D. from AIIMS, New Delhi, where my pioneering work laid the foundation for exploring the intricate genetic mechanisms of infertility. My academic journey then led to prestigious postdoctoral fellowships at the UTSW Medical Center in Dallas, USA, and Washington University in St. Louis, USA, further enriching my expertise in reproductive biology and cancer genomics.
+                        </div>
                     </div>
                 </div>
             </section>
@@ -162,13 +162,34 @@ export function People() {
                 <h2 className="text-3xl text-[#000f3a] font-semibold mb-6 border-b-2 border-[#cccccc] pb-2">LAB MEMBERS</h2>
                 <div id="member-grid" className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
                     {
-                        members.map( (member, memIndex) =>
-                                    <div key={memIndex} className="relative no-scrollbar text-center bg-gray-100 p-4 pb-2 rounded-lg overflow-auto shadow-md transform transition hover:shadow-lg cursor-pointer hover-plus" onClick={() => openModal(memIndex, true)}>
-                                        <img src={ member.image } alt={ member.name } className="h-[75%] object-cover rounded-full mb-2" />
-                                        <h3 className="font-semibold text-[#000f3a] md:text-xl">{ member.name }</h3>
-                                        <h4 className="text-[#003865]">{ member.labStatus }</h4>
-                                        <h4 className="text-black">{ member.academicQualification }</h4>
-                                    </div> )
+                        members.map( (member, memIndex) => (
+                            <div
+                                key={memIndex}
+                                className="flex flex-col bg-gray-100 rounded-lg shadow-md overflow-hidden aspect-[3/4]
+                                        transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl cursor-pointer"
+                                onClick={() => openModal(memIndex, true)}
+                            >
+                                <div className="flex-1 flex items-center justify-center p-4 min-h-0">
+                                    <img
+                                        src={ member.image }
+                                        alt={ member.name }
+                                        className="w-full aspect-square object-cover rounded-full shadow-md"
+                                    />
+                                </div>
+
+                                <div className="p-3 text-center border-t border-gray-200">
+                                    <h3 className="font-semibold text-[#000f3a] md:text-xl truncate" title={member.name}>
+                                        { member.name }
+                                    </h3>
+                                    <h4 className="text-sm text-[#003865] md:text-base font-medium truncate" title={member.labStatus}>
+                                        { member.labStatus }
+                                    </h4>
+                                    <h4 className="text-sm text-gray-800 md:text-base truncate" title={member.academicQualification}>
+                                        { member.academicQualification }
+                                    </h4>
+                                </div>
+                            </div>
+                        ))
                     }
                 </div>
             </section>
@@ -180,20 +201,37 @@ export function People() {
                 </button>
                 <div id="alumni-list" className="hidden grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
                     {
-                        alumni.map( (alum, alumIndex) =>
-                                    <div key={alumIndex} className="relative no-scrollbar text-center bg-gray-100 p-4 pb-2 rounded-lg overflow-auto shadow-md transform transition hover:shadow-lg cursor-pointer hover-plus" onClick={() => openModal(alumIndex, false)}>
-                                        <img src={ alum.image } alt={ alum.name } className="h-[80%] object-cover rounded-lg mb-2" />
-                                        <h3 className="font-semibold text-[#003865] md:text-xl">{ alum.name }</h3>
-                                        <h4 className="text-black">{ alum.description }</h4>
-                                    </div> )
+                        alumni.map( (alum, alumIndex) => (
+                            <div 
+                                key={alumIndex} 
+                                className="flex flex-col bg-gray-100 rounded-lg shadow-md overflow-hidden aspect-[3/4] 
+                                        transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl cursor-pointer" 
+                                onClick={() => openModal(alumIndex, false)}
+                            >
+                                <div className="flex-1 relative min-h-0">
+                                    <img 
+                                        src={ alum.image } 
+                                        alt={ alum.name } 
+                                        className="absolute w-full h-full object-cover" 
+                                    />
+                                </div>
+
+                                <div className="p-3 text-center">
+                                    <h3 className="text-[#000f3a] md:text-xl font-semibold truncate" title={alum.name}>
+                                        { alum.name }
+                                    </h3>
+                                    <h4 className="text-sm text-[#003865] md:text-lg font-medium truncate" title={alum.description}>
+                                        { alum.description }
+                                    </h4>
+                                </div>
+                            </div> 
+                        ))
                     }
                 </div>
             </section>
 
-            {/* Modal Overlay */}
             {showModal && (
                 <>
-                    {/* 🌐 Mobile Modal (<sm) */}
                     <div className="sm:hidden fixed inset-0 bg-black/50 z-50 flex items-center">
                         <div className="bg-[#2a2a2a]/95 text-white rounded-lg shadow-xl mx-[10vw] w-[80vw] py-4 max-h-full overflow-y-auto relative">
                             <button
@@ -233,7 +271,6 @@ export function People() {
                         </div>
                     </div>
     
-                    {/* 💻 Desktop Modal (sm+) */}
                     <div className="hidden sm:flex items-center justify-center fixed inset-0 bg-black/10 z-50">
                         <div className="bg-[#2a2a2a]/95 p-8 md:p-12 rounded-xl max-w-3xl w-[90%] h-[95vh] overflow-y-auto shadow-xl text-center text-white flex-col justify-center relative">
                             <button onClick={closeModal} className="absolute top-4 right-6 text-white hover:text-red-400 text-3xl font-bold">&times;</button>
