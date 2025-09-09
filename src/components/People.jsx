@@ -137,7 +137,7 @@ export function People() {
             <section className="max-w-6xl mx-auto px-4 py-12">
                 <h2 className="text-3xl text-[#000f3a] font-semibold mb-6 border-b-2 border-[#cccccc] pb-2">PRINCIPAL INVESTIGATOR</h2>
                 <div className="relative flex flex-col md:flex-row items-start gap-8 bg-gray-50 shadow rounded-lg p-6">
-                    <img src={piImg} alt="Dr. Rakesh Kumar" className="w-48 h-auto bg-white rounded-full shadow-md" />
+                    <img src={piImg} alt="Dr. Rakesh Kumar" className="w-48 h-auto bg-white border-1 border-gray-400 rounded-full shadow-md" />
                     <button onClick={togglePI} className="absolute top-4 right-6 z-10 text-xl font-bold bg-[#003865] text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-[#000f3a] transition">
                         <span id="pi-toggle-icon">+</span>
                     </button>
@@ -173,7 +173,7 @@ export function People() {
                                     <img
                                         src={ member.image }
                                         alt={ member.name }
-                                        className="w-full aspect-square object-cover rounded-full shadow-md"
+                                        className="w-full aspect-square object-cover border-1 border-gray-300 rounded-full shadow-md"
                                     />
                                 </div>
 
@@ -253,7 +253,7 @@ export function People() {
                             <img
                                 src={current.image}
                                 alt={current.name}
-                                className="w-70 h-70 rounded-2xl object-cover shadow-md"
+                                className="w-[80%] aspect-square object-cover rounded-full shadow-md"
                             />
     
                             <button
@@ -274,9 +274,9 @@ export function People() {
                     <div className="hidden sm:flex items-center justify-center fixed inset-0 bg-black/10 z-50">
                         <div className="bg-[#2a2a2a]/95 p-8 md:p-12 rounded-xl max-w-3xl w-[90%] h-[95vh] overflow-y-auto shadow-xl text-center text-white flex-col justify-center relative">
                             <button onClick={closeModal} className="absolute top-4 right-6 text-white hover:text-red-400 text-3xl font-bold">&times;</button>
-                            <div className="h-[65vh] flex justify-center mb-2">
+                            <div className="h-[65vh] flex justify-around mb-2">
                                 <button onClick={previousMember} className="w-[20%] h-[8vh] my-auto text-3xl text-black bg-gray-100 rounded hover:bg-gray-200">&#8592;</button>
-                                <img src={current.image} alt={current.name} className="w-[50%] h-[60vh] mx-auto object-cover rounded-2xl" />
+                                <img src={current.image} alt={current.name} className="p-3 aspect-square object-cover rounded-full shadow-md" />
                                 <button onClick={nextMember} className="w-[20%] h-[8vh] my-auto text-3xl text-black bg-gray-100 rounded hover:bg-gray-200">&#8594;</button>
                             </div>
                             <div className="h-[20vh] flex-col justify-center items-center mb-2">
