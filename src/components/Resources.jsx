@@ -1,5 +1,3 @@
-import img1 from '../images/resources/Tube-Tops1.jpg';
-
 export function Resources() {
   return (
     <div>
@@ -26,7 +24,7 @@ function ResourceCard() {
   return (
     <div className="flex flex-col items-center">
       <img
-        src={img1}
+        src="./src/images/resources/Tube-Tops1.jpg"
         className="w-full max-w-xl object-cover rounded-lg shadow-md"
         alt="Resource"
       />
