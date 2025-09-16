@@ -146,12 +146,12 @@ export function People() {
                             <h3 className="text-4xl text-[#000f3a] font-bold">Dr. Rakesh Kumar</h3>
                             <h4 className="text-3xl text-[#003865] font-semibold">Assistant Professor, SMVDU</h4>
                         </div>
-                        <p id="pi-description" className="mt-4 text-gray-700 text-xl text-justify leading-relaxed hidden">
+                        <p id="pi-description" className="mt-4 text-gray-700 text-xl leading-relaxed hidden sm:text-justify">
                             My research focuses on deciphering the genetic and molecular mechanisms underlying infertility and cancer through advanced genomic tools and epigenetic profiling. Over the years, I have successfully led numerous national and international research projects funded by esteemed agencies such as ICMR, DST, and DBT, securing substantial grants.
                             I am deeply committed to mentoring the next generation of scientists and fostering collaborative initiatives. I have organized multiple national and international workshops and serve on editorial boards of reputed journals. 
                             A key aspect of my vision is to bridge the gap between laboratory discoveries and their real-world applications, driving advancements in healthcare and biotechnology.
                         </p>
-                        <div className="mt-4 font-medium text-gray-900 text-justify text-xl ">
+                        <div className="mt-4 font-medium text-gray-900 text-xl sm:text-justify">
                             I earned my Ph.D. from AIIMS, New Delhi, where my pioneering work laid the foundation for exploring the intricate genetic mechanisms of infertility. My academic journey then led to prestigious postdoctoral fellowships at the UTSW Medical Center in Dallas, USA, and Washington University in St. Louis, USA, further enriching my expertise in reproductive biology and cancer genomics.
                         </div>
                     </div>

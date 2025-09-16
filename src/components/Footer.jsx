@@ -1,5 +1,3 @@
-import logo from "../images/logo.jpg";
-
 export function Footer(){
     return<div>
 <footer class="bg-white dark:bg-gray-900">
@@ -7,8 +5,8 @@ export function Footer(){
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
               <a href="/" class="flex items-center">
-                  <img src={logo} class="h-12 me-3" alt="FlowBite Logo" />
-                  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">KUMAR'S LAB</span>
+                  <img src="/src/images/logo.jpg" class="h-12 me-3" alt="FlowBite Logo" />
+                  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">KUMAR LABS</span>
               </a>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
