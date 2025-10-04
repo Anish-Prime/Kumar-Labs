@@ -6,21 +6,21 @@ const resourcesData = [
     description:
       "Our lab is equipped with Fluorescence in Situ Hybridization (FISH) microscopy, This aids in identifying chromosomal aberrations, gene amplifications, and translocations linked to various cancer types.",
     color: "blue",
-    images: ["/Resources/p1.png", "/Resources/p2.png"],
+    images: ["/images/Resources/p1.png", "/images/Resources/p2.png"],
   },
   {
     title: "NGS FACILITY",
     description:
       "We are also Equipped with an iSeq sequencer, we possess the ability to perform next-generation sequencing (NGS) with high accuracy and throughput.",
     color: "green",
-    images: ["/Resources/p3.png", "/Resources/p4.png"],
+    images: ["/images/Resources/p3.png", "/images/Resources/p4.png"],
   },
   {
     title: "MICROARRAY FACILITY",
     description:
       "Our lab houses a state-of-the-art Microarray facility, featuring only two such machines across the entire nation. This technology enables high-throughput analysis of gene expression, genotyping, and DNA methylation patterns, allowing us to unravel the intricate genetic signatures underlying various diseases in the Jammu and Kashmir population.",
     color: "red",
-    images: ["/Resources/p5.png", "/Resources/p6.png", "/Resources/p7.png", "/Resources/p8.png"],
+    images: ["/images/Resources/p5.png", "/images/Resources/p6.png", "/images/Resources/p7.png", "/images/Resources/p8.png"],
   },
 ];
 

@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 
 export function Homepage() {
   const img = [
-    "/Homepage/img1.webp",
-    "/Homepage/img2.jpg",
-    "/Homepage/img3.webp",
-    "/Homepage/img4.webp",
-    "/Homepage/img5.webp"
+    "/images/Homepage/img1.webp",
+    "/images/Homepage/img2.jpg",
+    "/images/Homepage/img3.webp",
+    "/images/Homepage/img4.webp",
+    "/images/Homepage/img5.webp"
   ];
 
   return (
@@ -34,7 +34,7 @@ function Slideshow({ img }) {
   }, [img.length]);
   
   return (
-    <div className="col-span-12">
+    <div className="col-span-12 overflow-hidden">
       <style>{`
         .logo-slider {
           position: relative;
@@ -60,7 +60,7 @@ function Slideshow({ img }) {
       <img
         src={img[index]}
         alt={`Slide ${index + 1}`}
-        className={`h-80 w-150 md:h-130 md:w-350 justify-self-center transition duration-[10000ms] ease-out  ${fade ? "scale-x-106" : "scale-x-100"} bg-zinc-200`}
+        className={`w-full aspect-video justify-self-center transition duration-[10000ms] ease-out  ${fade ? "scale-x-106" : "scale-x-100"} bg-zinc-200`}
       />
       <div>
   {/* Main Heading */}
@@ -133,15 +133,15 @@ function Slideshow({ img }) {
   {/* Images */}
   <div className="flex flex-col md:flex-row justify-evenly items-center">
     <img
-      src="/Homepage/achive.png"
+      src="/images/Homepage/achive.png"
       className="mt-10 h-60 mb-20 transition-transform transition-shadow duration-300 ease-in-out hover:-translate-y-4 hover:scale-105 hover:shadow-2xl cursor-pointer"
     />
     <img
-      src="/Homepage/achive2.png"
+      src="/images/Homepage/achive2.png"
       className="mt-10 h-60 mb-20 transition-transform transition-shadow duration-300 ease-in-out hover:-translate-y-4 hover:scale-105 hover:shadow-2xl cursor-pointer"
     />
     <img
-      src="/Homepage/achive3.png"
+      src="/images/Homepage/achive3.png"
       className="mt-10 h-60 mb-20 transition-transform transition-shadow duration-300 ease-in-out hover:-translate-y-4 hover:scale-105 hover:shadow-2xl cursor-pointer"
     />
   </div>
@@ -165,44 +165,44 @@ function Slideshow({ img }) {
   <div className="flex-grow h-1 bg-gradient-to-r from-blue-600 to-gray-100"></div>
 </div>
   <ul className="logo-track flex items-center">
-    <li><img src="/Homepage/1.png" /></li>
-    <li><img src="/Homepage/2.png" /></li>
-    <li><img src="/Homepage/3.png" /></li>
-    <li><img src="/Homepage/4.png" /></li>
-    <li><img src="/Homepage/5.png" /></li>
-    <li><img src="/Homepage/6.png" /></li>
-    <li><img src="/Homepage/7.png" /></li>
-    <li><img src="/Homepage/8.png" /></li>
-    <li><img src="/Homepage/9.png" /></li>
-    <li><img src="/Homepage/10.png" className="bg-white" /></li>
-    <li><img src="/Homepage/11.png" /></li>
-    <li><img src="/Homepage/12.png" /></li>
-    <li><img src="/Homepage/13.png" /></li>
-    <li><img src="/Homepage/14.png" /></li>
-    <li><img src="/Homepage/15.png" /></li>
-    <li><img src="/Homepage/16.png" /></li>
-    <li><img src="/Homepage/17.png" /></li>
-    <li><img src="/Homepage/18.png" /></li>
-    <li><img src="/Homepage/19.png" /></li>
-    <li><img src="/Homepage/1.png" /></li>
-    <li><img src="/Homepage/2.png" /></li>
-    <li><img src="/Homepage/3.png" /></li>
-    <li><img src="/Homepage/4.png" /></li>
-    <li><img src="/Homepage/5.png" /></li>
-    <li><img src="/Homepage/6.png" /></li>
-    <li><img src="/Homepage/7.png" /></li>
-    <li><img src="/Homepage/8.png" /></li>
-    <li><img src="/Homepage/9.png" /></li>
-    <li><img src="/Homepage/10.png" /></li>
-    <li><img src="/Homepage/11.png" /></li>
-    <li><img src="/Homepage/12.png" /></li>
-    <li><img src="/Homepage/13.png" /></li>
-    <li><img src="/Homepage/14.png" /></li>
-    <li><img src="/Homepage/15.png" /></li>
-    <li><img src="/Homepage/16.png" /></li>
-    <li><img src="/Homepage/17.png" /></li>
-    <li><img src="/Homepage/18.png" /></li>
-    <li><img src="/Homepage/19.png" /></li>
+    <li><img src="/images/Homepage/1.png" /></li>
+    <li><img src="/images/Homepage/2.png" /></li>
+    <li><img src="/images/Homepage/3.png" /></li>
+    <li><img src="/images/Homepage/4.png" /></li>
+    <li><img src="/images/Homepage/5.png" /></li>
+    <li><img src="/images/Homepage/6.png" /></li>
+    <li><img src="/images/Homepage/7.png" /></li>
+    <li><img src="/images/Homepage/8.png" /></li>
+    <li><img src="/images/Homepage/9.png" /></li>
+    <li><img src="/images/Homepage/10.png" className="bg-white" /></li>
+    <li><img src="/images/Homepage/11.png" /></li>
+    <li><img src="/images/Homepage/12.png" /></li>
+    <li><img src="/images/Homepage/13.png" /></li>
+    <li><img src="/images/Homepage/14.png" /></li>
+    <li><img src="/images/Homepage/15.png" /></li>
+    <li><img src="/images/Homepage/16.png" /></li>
+    <li><img src="/images/Homepage/17.png" /></li>
+    <li><img src="/images/Homepage/18.png" /></li>
+    <li><img src="/images/Homepage/19.png" /></li>
+    <li><img src="/images/Homepage/1.png" /></li>
+    <li><img src="/images/Homepage/2.png" /></li>
+    <li><img src="/images/Homepage/3.png" /></li>
+    <li><img src="/images/Homepage/4.png" /></li>
+    <li><img src="/images/Homepage/5.png" /></li>
+    <li><img src="/images/Homepage/6.png" /></li>
+    <li><img src="/images/Homepage/7.png" /></li>
+    <li><img src="/images/Homepage/8.png" /></li>
+    <li><img src="/images/Homepage/9.png" /></li>
+    <li><img src="/images/Homepage/10.png" /></li>
+    <li><img src="/images/Homepage/11.png" /></li>
+    <li><img src="/images/Homepage/12.png" /></li>
+    <li><img src="/images/Homepage/13.png" /></li>
+    <li><img src="/images/Homepage/14.png" /></li>
+    <li><img src="/images/Homepage/15.png" /></li>
+    <li><img src="/images/Homepage/16.png" /></li>
+    <li><img src="/images/Homepage/17.png" /></li>
+    <li><img src="/images/Homepage/18.png" /></li>
+    <li><img src="/images/Homepage/19.png" /></li>
   </ul>
 </div>
 <div className="w-full overflow-hidden bg-gray-100">
@@ -225,7 +225,7 @@ function Slideshow({ img }) {
   <ul className="flex justify-center">
     <li>
       <img
-        src="/Homepage/sponsors.png"
+        src="/images/Homepage/sponsors.png"
         className="mt-10 mb-20 h-60 sm:h-28 md:h-40 lg:h-100 object-contain transition-transform transition-shadow duration-300 ease-in-out hover:-translate-y-4 hover:scale-105 hover:shadow-2xl cursor-pointer"
         alt="Sponsor"
       />

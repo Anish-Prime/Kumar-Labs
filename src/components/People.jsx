@@ -1,17 +1,17 @@
 import React, { use, useState } from "react";
-import piImg from '../images/People/Dr.-Rakesh-Kumar.png';
+import piImg from '/images/People/Dr.-Rakesh-Kumar.png';
 
-import mem1 from '../images/People/Lab Members/Ms.-Minerva-Sharma.png';
-import mem2 from "../images/People/Lab Members/Mr.-Rajeshwer-S-Jamwal.png";
-import mem3 from "../images/People/Lab Members/Mr.-Bhawani-Sharma.png";
-import mem4 from "../images/People/Lab Members/Ms.-Pushpa-Oraon.png";
+import mem1 from '/images/People/Lab Members/Ms.-Minerva-Sharma.png';
+import mem2 from "/images/People/Lab Members/Mr.-Rajeshwer-S-Jamwal.png";
+import mem3 from "/images/People/Lab Members/Mr.-Bhawani-Sharma.png";
+import mem4 from "/images/People/Lab Members/Ms.-Pushpa-Oraon.png";
 
-import alm1 from "../images/People/Alumni/Dr. Ashna Nagpal.png";
-import alm2 from "../images/People/Alumni/Dr. Sonali Verma.png";
-import alm3 from "../images/People/Alumni/Dr. GR Bhat.png";
-import alm4 from "../images/People/Alumni/Dr. Amrita Bhat.png";
-import alm5 from "../images/People/Alumni/Dr. Divya Bakshi.png";
-import alm6 from "../images/People/Alumni/Dr. Bhanu Sharma.png";
+import alm1 from "/images/People/Alumni/Dr. Ashna Nagpal.png";
+import alm2 from "/images/People/Alumni/Dr. Sonali Verma.png";
+import alm3 from "/images/People/Alumni/Dr. GR Bhat.png";
+import alm4 from "/images/People/Alumni/Dr. Amrita Bhat.png";
+import alm5 from "/images/People/Alumni/Dr. Divya Bakshi.png";
+import alm6 from "/images/People/Alumni/Dr. Bhanu Sharma.png";
 
 export function People() {
     
@@ -144,15 +144,15 @@ export function People() {
                     <div className="w-full">
                         <div className="relative flex-col items-center justify-between">
                             <h3 className="text-4xl text-[#000f3a] font-bold">Dr. Rakesh Kumar</h3>
-                            <h4 className="text-3xl text-[#003865] font-semibold">Assistant Professor, SMVDU</h4>
+                            <h4 className="text-3xl text-[#003865] font-semibold">Associate Professor, SMVDU</h4>
                         </div>
                         <p id="pi-description" className="mt-4 text-gray-700 text-xl leading-relaxed hidden sm:text-justify">
-                            My research focuses on deciphering the genetic and molecular mechanisms underlying infertility and cancer through advanced genomic tools and epigenetic profiling. Over the years, I have successfully led numerous national and international research projects funded by esteemed agencies such as ICMR, DST, and DBT, securing substantial grants.
-                            I am deeply committed to mentoring the next generation of scientists and fostering collaborative initiatives. I have organized multiple national and international workshops and serve on editorial boards of reputed journals. 
-                            A key aspect of my vision is to bridge the gap between laboratory discoveries and their real-world applications, driving advancements in healthcare and biotechnology.
+                            His research focuses on deciphering the genetic and molecular mechanisms underlying infertility and cancer through advanced genomic tools and epigenetic profiling. Over the years, he has successfully led numerous national and international research projects funded by esteemed agencies such as ICMR, DST, and DBT, securing substantial grants.
+                            He is deeply committed to mentoring the next generation of scientists and fostering collaborative initiatives. He has organized multiple national and international workshops and serve on editorial boards of reputed journals. 
+                            A key aspect of his vision is to bridge the gap between laboratory discoveries and their real-world applications, driving advancements in healthcare and biotechnology.
                         </p>
                         <div className="mt-4 font-medium text-gray-900 text-xl sm:text-justify">
-                            I earned my Ph.D. from AIIMS, New Delhi, where my pioneering work laid the foundation for exploring the intricate genetic mechanisms of infertility. My academic journey then led to prestigious postdoctoral fellowships at the UTSW Medical Center in Dallas, USA, and Washington University in St. Louis, USA, further enriching my expertise in reproductive biology and cancer genomics.
+                            He earned his Ph.D. from AIIMS, New Delhi, where his pioneering work laid the foundation for exploring the intricate genetic mechanisms of infertility. His academic journey then led to prestigious postdoctoral fellowships at the UTSW Medical Center in Dallas, USA, and Washington University in St. Louis, USA, further enriching his expertise in reproductive biology and cancer genomics.
                         </div>
                     </div>
                 </div>
@@ -197,9 +197,9 @@ export function People() {
             <section className="max-w-6xl mx-auto px-4 py-12">
                 <h2 className="text-3xl text-[#000f3a] font-semibold mb-4 border-b-2 border-[#cccccc] pb-2">ALUMNI</h2>
                 <button onClick={toggleAlumni} id="alumni-toggle-btn" className="mb-4 px-4 py-2 bg-white border border-gray-400 text-[#003865] rounded hover:bg-[#f0f0f0] transition">
-                    SHOW FULL LIST
+                    HIDE FULL LIST
                 </button>
-                <div id="alumni-list" className="hidden grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                <div id="alumni-list" className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
                     {
                         alumni.map( (alum, alumIndex) => (
                             <div 
@@ -272,7 +272,7 @@ export function People() {
                     </div>
     
                     <div className="hidden sm:flex items-center justify-center fixed inset-0 bg-black/10 z-50">
-                        <div className="bg-[#2a2a2a]/95 p-8 md:p-12 rounded-xl max-w-3xl w-[90%] h-[95vh] overflow-y-auto shadow-xl text-center text-white flex-col justify-center relative">
+                        <div className="bg-[#2a2a2a]/95 p-8 md:p-12 rounded-xl w-[65%] h-[95vh] overflow-y-auto shadow-xl text-center text-white flex-col justify-center relative">
                             <button onClick={closeModal} className="absolute top-4 right-6 text-white hover:text-red-400 text-3xl font-bold">&times;</button>
                             <div className="h-[65vh] flex justify-around mb-2">
                                 <button onClick={previousMember} className="w-[20%] h-[8vh] my-auto text-3xl text-black bg-gray-100 rounded hover:bg-gray-200">&#8592;</button>

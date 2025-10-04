@@ -13,19 +13,20 @@ function App() {
 
   return (
         <BrowserRouter>
-        <Hero/>
-        <Routes>
-          <Route path="/" element={<Homepage/>}/>
-          <Route path="/resources" element={<Resources/>}/>
-          <Route path="/project" element={<Project/>}/>
-          <Route path="/gallery" element={<Gallery/>}/>
-          <Route path="/people" element={<People/>}/>
-          <Route path="/publications" element={<Publications/>}/>
-        </Routes>
-        <Footer/>
+          <main className="mx-auto h-[100%] max-w-screen-2xl">
+            <Hero/>
+            <Routes>
+              <Route path="/" element={<Homepage/>}/>
+              <Route path="/resources" element={<Resources/>}/>
+              <Route path="/project" element={<Project/>}/>
+              <Route path="/gallery" element={<Gallery/>}/>
+              <Route path="/people" element={<People/>}/>
+              <Route path="/publications" element={<Publications/>}/>
+            </Routes>
+            <Footer/>
+          </main>
         </BrowserRouter>
   )
 }
 
 export default App
- 
