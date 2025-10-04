@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 
 export function Homepage() {
   const img = [
-    "/images/Homepage/img1.webp",
     "/images/Homepage/img2.jpg",
-    "/images/Homepage/img3.webp",
+    "/images/Homepage/img6.webp",
+    "/images/Homepage/img1.webp",
     "/images/Homepage/img4.webp",
     "/images/Homepage/img5.webp"
   ];
@@ -30,6 +30,7 @@ function Slideshow({ img }) {
         setFade(true); 
       }, 5000); 
     }, 10000); 
+
     return () => clearInterval(interval); 
   }, [img.length]);
   

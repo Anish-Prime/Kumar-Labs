@@ -13,16 +13,18 @@ function App() {
 
   return (
         <BrowserRouter>
-          <main className="mx-auto h-[100%] max-w-screen-2xl">
+          <main className="mx-auto flex min-h-screen max-w-screen-2xl flex-col">
             <Hero/>
-            <Routes>
-              <Route path="/" element={<Homepage/>}/>
-              <Route path="/resources" element={<Resources/>}/>
-              <Route path="/project" element={<Project/>}/>
-              <Route path="/gallery" element={<Gallery/>}/>
-              <Route path="/people" element={<People/>}/>
-              <Route path="/publications" element={<Publications/>}/>
-            </Routes>
+            <div className="flex flex-col flex-1">
+              <Routes>
+                <Route path="/" element={<Homepage/>}/>
+                <Route path="/resources" element={<Resources/>}/>
+                <Route path="/project" element={<Project/>}/>
+                <Route path="/gallery" element={<Gallery/>}/>
+                <Route path="/people" element={<People/>}/>
+                <Route path="/publications" element={<Publications/>}/>
+              </Routes>
+            </div>
             <Footer/>
           </main>
         </BrowserRouter>
