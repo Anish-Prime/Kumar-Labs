@@ -14,7 +14,9 @@ function App() {
   return (
         <BrowserRouter>
           <main className="mx-auto flex min-h-screen max-w-screen-2xl flex-col">
-            <Hero/>
+            <div>
+              <Hero/>
+            </div>
             <div className="flex flex-col flex-1">
               <Routes>
                 <Route path="/" element={<Homepage/>}/>
@@ -25,7 +27,9 @@ function App() {
                 <Route path="/publications" element={<Publications/>}/>
               </Routes>
             </div>
-            <Footer/>
+            <div>
+              <Footer/>
+            </div>
           </main>
         </BrowserRouter>
   )

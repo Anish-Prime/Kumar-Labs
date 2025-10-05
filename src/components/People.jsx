@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ChevronLeft, ChevronRight } from "react-feather";
 import piImg from '/images/People/Dr.-Rakesh-Kumar.png';
 
 import mem1 from '/images/People/Lab Members/Ms.-Minerva-Sharma.png';
@@ -134,9 +135,13 @@ export function People() {
                         <div className="bg-[#2a2a2a]/95 text-white rounded-lg shadow-xl mx-auto w-[90vw] p-4 max-h-[80vh] overflow-y-auto relative flex flex-col">
                             <button onClick={closeModal} className="absolute top-2 right-2 text-white text-3xl hover:text-red-400 z-10" aria-label="Close modal">&times;</button>
                             <div className="flex items-center justify-between">
-                                <button onClick={() => navigateModal(-1)} className="p-2 text-2xl text-black bg-gray-100 rounded-full hover:bg-gray-200" aria-label="Previous">&#8592;</button>
+                                <button onClick={() => navigateModal(-1)} className="p-2 bg-white text-black rounded-full hover:bg-white/90 transition-colors focus:outline-none focus:ring-2 focus:ring-white/50" aria-label="Previous">
+                                    <ChevronLeft size={24}/>
+                                </button>
                                 <img src={currentItem.image} alt={currentItem.name} className="w-3/5 aspect-square object-cover rounded-full shadow-md mx-2"/>
-                                <button onClick={() => navigateModal(1)} className="p-2 text-2xl text-black bg-gray-100 rounded-full hover:bg-gray-200" aria-label="Next">&#8594;</button>
+                                <button onClick={() => navigateModal(1)} className="p-2 bg-white text-black rounded-full hover:bg-white/90 transition-colors focus:outline-none focus:ring-2 focus:ring-white/50" aria-label="Next">
+                                    <ChevronRight size={24}/>
+                                </button>
                             </div>
                             <div className="text-center mt-4">
                                 <h3 className="text-2xl font-semibold mb-2">{currentItem.name}</h3>
@@ -149,11 +154,15 @@ export function People() {
                         <div className="bg-[#2a2a2a]/95 p-8 rounded-xl w-full max-w-5xl max-h-[90vh] overflow-y-auto shadow-xl text-white flex flex-col relative">
                             <button onClick={closeModal} className="absolute top-4 right-6 text-white hover:text-red-400 text-4xl font-bold" aria-label="Close modal">&times;</button>
                             <div className="flex items-center justify-center gap-6">
-                                <button onClick={() => navigateModal(-1)} className="p-4 text-3xl text-black bg-gray-100 rounded-full hover:bg-gray-200" aria-label="Previous member">&#8592;</button>
+                                <button onClick={() => navigateModal(-1)} className="p-3 bg-white text-black rounded-full hover:bg-white/90 transition-colors focus:outline-none focus:ring-2 focus:ring-white/50" aria-label="Previous member">
+                                    <ChevronLeft size={32}/>
+                                </button>
                                 <div className="w-full max-w-sm flex-shrink-0">
                                     <img src={currentItem.image} alt={currentItem.name} className="w-full aspect-square object-contain rounded-full shadow-md"/>
                                 </div>
-                                <button onClick={() => navigateModal(1)} className="p-4 text-3xl text-black bg-gray-100 rounded-full hover:bg-gray-200" aria-label="Next member">&#8594;</button>
+                                <button onClick={() => navigateModal(1)} className="p-3 bg-white text-black rounded-full hover:bg-white/90 transition-colors focus:outline-none focus:ring-2 focus:ring-white/50" aria-label="Next member">
+                                    <ChevronRight size={32}/>
+                                </button>
                             </div>
                             <div className="mt-4 text-center">
                                 <h3 className="text-3xl font-bold mb-2">{currentItem.name}</h3>
