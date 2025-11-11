@@ -43,7 +43,7 @@ export function Navbar() {
   return (
     <div>
       {/* Desktop Navbar */}
-      <div className="hidden md:flex justify-evenly mt-7 mb-5">
+      <div className="hidden md:flex justify-between ml-3 mr-2 mt-7 mb-5">
         <Flyout_content href="/" Flying_content={Null}>
           Kumar's Lab
         </Flyout_content>

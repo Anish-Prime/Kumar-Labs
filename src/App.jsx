@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import './App.css'
 import { Hero } from './components/Hero'
 import { Homepage } from './components/Homepage'
 import { Resources } from './components/Resources'

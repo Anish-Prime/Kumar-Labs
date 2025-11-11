@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { ChevronLeft, ChevronRight } from "react-feather";
 import piImg from '/images/People/Dr.-Rakesh-Kumar.png';
 
-// Lab Members Images
 import mem1 from '/images/People/Lab Members/Ms.-Minerva-Sharma.png';
 import mem2 from "/images/People/Lab Members/Mr.-Rajeshwer-S-Jamwal.png";
 import mem3 from "/images/People/Lab Members/Mr.-Bhawani-Sharma.jpeg";
@@ -14,7 +13,6 @@ import mem8 from "/images/People/Lab Members/Mr.-Jagdeep-Singh.jpeg";
 import mem9 from "/images/People/Lab Members/Vitasta-Kuchroo.jpeg";
 import mem10 from "/images/People/Lab Members/Ms.-Pushpa-Oraon.jpeg";
 
-// Alumni Images
 import alm1 from "/images/People/Alumni/Dr. Ashna Nagpal.png";
 import alm2 from "/images/People/Alumni/Dr. Sonali Verma.png";
 import alm3 from "/images/People/Alumni/Dr. GR Bhat.png";
@@ -36,7 +34,7 @@ export function People() {
             image: mem1, 
             labStatus: "Research Scholar", 
             academicQualification: "Ph.D. Submitted", 
-            description: "I am Minerva, a researcher with a strong academic background in Biotechnology, holding both graduate and postgraduate degrees in the field. Currently, I am pursuing a Ph.D. in Cancer Genetics, with my research focusing on the genetic mechanisms of ovarian cancer. My passion lies in understanding how these mechanisms drive cancer progression and finding ways to translate this knowledge into therapeutic advancements. Beyond my work, I am a nature lover who finds joy in traveling, exploring new places, and immersing myself in different cultures. I enjoy observing people and learning about their traditions, which inspires me and enriches my perspective on life. Balancing my academic pursuits with these personal interests keeps me grounded and fuels my curiosity.", 
+            description: "I am Minerva, a researcher with a strong academic background in Biotechnology, holding both graduate and postgraduate degrees in the field. Currently, I am pursuing a Ph.D. in Cancer Genetics, with my research focusing on the genetic mechanisms of ovarian cancer. My passion lies in understanding how these mechanisms drive cancer progression and finding ways to translate this knowledge into therapeutic advancements.\n Beyond my work, I am a nature lover who finds joy in traveling, exploring new places, and immersing myself in different cultures. I enjoy observing people and learning about their traditions, which inspires me and enriches my perspective on life. Balancing my academic pursuits with these personal interests keeps me grounded and fuels my curiosity.", 
             cvLink: "#", 
             scholarLink: "#" 
         },
@@ -54,7 +52,7 @@ export function People() {
             image: mem3, 
             labStatus: "Research Scholar", 
             academicQualification: "Ph.D. Ongoing", 
-            description: "Driven by a curiosity for the complexities of human genetics, I have pursued a dedicated academic journey. After completing my schooling and undergraduate studies in Jammu and earning a master’s degree in Biotechnology from SMVDU, I am now engaged in PhD research at SMVDU. My work delves into the genetic basis of male infertility, focusing on Y chromosome microdeletions, mitochondrial alterations, and genetic mutations. By combining advanced genomic tools with community health initiatives, I aim to contribute to both scientific understanding and impactful health solutions. Originally from the picturesque Rajouri district, I value traveling and exploring new experiences as sources of inspiration. Outside of research, I enjoy connecting with diverse perspectives, enriching my outlook on life and science.", 
+            description: "Driven by a curiosity for the complexities of human genetics, I have pursued a dedicated academic journey. After completing my schooling and undergraduate studies in Jammu and earning a master’s degree in Biotechnology from SMVDU, I am now engaged in PhD research at SMVDU. My work delves into the genetic basis of male infertility, focusing on Y chromosome microdeletions, mitochondrial alterations, and genetic mutations. By combining advanced genomic tools with community health initiatives, I aim to contribute to both scientific understanding and impactful health solutions.\n Originally from the picturesque Rajouri district, I value traveling and exploring new experiences as sources of inspiration. Outside of research, I enjoy connecting with diverse perspectives, enriching my outlook on life and science.", 
             cvLink: "#", 
             scholarLink: "#" 
         },
@@ -63,7 +61,7 @@ export function People() {
             image: mem4, 
             labStatus: "Research Scholar", 
             academicQualification: "Ph.D. Ongoing", 
-            description: "I am Agamya, a researcher driven by curiosity about how life at the microscopic level shapes health and disease. My journey began with a fascination for biology, which led me to earn a postgraduate degree in Zoology with distinction, followed by a deep dive into Biotechnology. My research journey has been shaped by diverse hands-on experiences across both molecular and behavioral biology. Currently, I am pursuing my Ph.D. in Biotechnology, particularly in Cancer Biology at Shri Mata Vaishno Devi University, where my research focuses on understanding how dietary nitrosamines and genetic factors contribute to colorectal cancer in the population of Jammu and Kashmir. Through this work, I aim to uncover the molecular links between lifestyle, environment, and cancer, with the hope of contributing to strategies for early detection and prevention. Beyond the world of cells and molecules, I am an avid nature lover and traveler. These experiences remind me that curiosity—whether in the lab or in life—is the key to discovery.", 
+            description: "I am Agamya, a researcher driven by curiosity about how life at the microscopic level shapes health and disease. My journey began with a fascination for biology, which led me to earn a postgraduate degree in Zoology with distinction, followed by a deep dive into Biotechnology. My research journey has been shaped by diverse hands-on experiences across both molecular and behavioral biology. Currently, I am pursuing my Ph.D. in Biotechnology, particularly in Cancer Biology at Shri Mata Vaishno Devi University, where my research focuses on understanding how dietary nitrosamines and genetic factors contribute to colorectal cancer in the population of Jammu and Kashmir. Through this work, I aim to uncover the molecular links between lifestyle, environment, and cancer, with the hope of contributing to strategies for early detection and prevention.\n Beyond the world of cells and molecules, I am an avid nature lover and traveler. These experiences remind me that curiosity—whether in the lab or in life—is the key to discovery.", 
             cvLink: "#", 
             scholarLink: "#" 
         },
@@ -72,7 +70,7 @@ export function People() {
             image: mem5, 
             labStatus: "Research Scholar", 
             academicQualification: "Ph.D. Ongoing", 
-            description: "A Researcher whose career is defined by curiosity, perseverance, and a deep commitment to advancing the fields of molecular biology and genomics. Ever since receiving my Bsc. from Gharwal university and Msc from Central University of Kerala I have been interested in pursuing my curiosities. Since 2018, I have made significant contributions at Dr. Ganju Lab (OSU), leading pivotal research on microRNA expression, drug resistance in cancer, and tumor micro-environment mechanisms. I have joined Dr. Rakesh Kumar as a PhD scholar in 2025. My focus of research is on lung cancer drug resistance and molecular pathways involved in drug resistance. Apart from being a researcher I love dancing my heart out and exploring new places. Exploring new places and cultures helps me refresh my mind and thoughts.", 
+            description: "A Researcher whose career is defined by curiosity, perseverance, and a deep commitment to advancing the fields of molecular biology and genomics. Ever since receiving my Bsc. from Gharwal university and Msc from Central University of Kerala I have been interested in pursuing my curiosities. Since 2018, I have made significant contributions at Dr. Ganju Lab (OSU), leading pivotal research on microRNA expression, drug resistance in cancer, and tumor micro-environment mechanisms. I have joined Dr. Rakesh Kumar as a PhD scholar in 2025. My focus of research is on lung cancer drug resistance and molecular pathways involved in drug resistance.\n Apart from being a researcher I love dancing my heart out and exploring new places. Exploring new places and cultures helps me refresh my mind and thoughts.", 
             cvLink: "#", 
             scholarLink: "https://scholar.google.com/citations?user=mktchc8AAAAJ&hl=en&oi=ao" 
         },
@@ -81,7 +79,7 @@ export function People() {
             image: mem6, 
             labStatus: "Research Scholar", 
             academicQualification: "Ph.D. Ongoing", 
-            description: "I completed my Bachelor’s degree in Botany from Miranda House, University of Delhi, followed by a Master’s in Life Sciences from the Central University of Gujarat. During my master’s dissertation, I explored the field of nanotechnology-based drug delivery, focusing on the synthesis of a hybrid system combining monocyte membranes and liposomes for targeted cancer therapy, exploring its potential for enhanced drug delivery and bio-compatibility. Currently, I am pursuing my Ph.D. at the Centre for Human Genomics, Shri Mata Vaishno Devi University, where my research is focused on cancer genetics, aiming to understand the molecular and genetic mechanisms underlying cancer progression. Joint PhD scholar.", 
+            description: "I completed my Bachelor’s degree in Botany from Miranda House, University of Delhi, followed by a Master’s in Life Sciences from the Central University of Gujarat. During my master’s dissertation, I explored the field of nanotechnology-based drug delivery, focusing on the synthesis of a hybrid system combining monocyte membranes and liposomes for targeted cancer therapy, exploring its potential for enhanced drug delivery and bio-compatibility. Currently, I am pursuing my Ph.D. at the Centre for Human Genomics, Shri Mata Vaishno Devi University, where my research is focused on cancer genetics, aiming to understand the molecular and genetic mechanisms underlying cancer progression.", 
             cvLink: "#", 
             scholarLink: "#" 
         },
@@ -90,7 +88,7 @@ export function People() {
             image: mem7, 
             labStatus: "Research Scholar", 
             academicQualification: "Ph.D. Ongoing", 
-            description: "I hold a Bachelor of Science degree from Government College for Women, Parade, Jammu, followed by a Master’s in Human Genetics from the University of Jammu. During my postgraduate studies, I developed a deep interest in genetic research, which inspired me to pursue a PhD in Biotechnology at Shri Mata Vaishno Devi University. My doctoral research focuses on the genetics of female infertility, with the aim of identifying key genetic factors and molecular mechanisms that contribute to reproductive challenges in women. Through this work, I hope to contribute to the understanding of infertility from a genetic perspective. Outside of my academic interests, I enjoy traveling and experiencing diverse cultures, which has enriched my perspective and adaptability. I’m particularly interested in historical sites and natural landscapes.", 
+            description: "I hold a Bachelor of Science degree from Government College for Women, Parade, Jammu, followed by a Master’s in Human Genetics from the University of Jammu. During my postgraduate studies, I developed a deep interest in genetic research, which inspired me to pursue a PhD in Biotechnology at Shri Mata Vaishno Devi University. My doctoral research focuses on the genetics of female infertility, with the aim of identifying key genetic factors and molecular mechanisms that contribute to reproductive challenges in women. Through this work, I hope to contribute to the understanding of infertility from a genetic perspective.\n Outside of my academic interests, I enjoy traveling and experiencing diverse cultures, which has enriched my perspective and adaptability. I’m particularly interested in historical sites and natural landscapes.", 
             cvLink: "#", 
             scholarLink: "#" 
         },
@@ -99,7 +97,7 @@ export function People() {
             image: mem8, 
             labStatus: "Research Scholar", 
             academicQualification: "Ph.D. Ongoing", 
-            description: "I have done my masters in zoology and currently I am researching on various genetic and non-genetic factors and their association with prostate cancer development. I aim to identify the various genetic factors of prostate cancer and the link between non-genetic factors in the Jammu & Kashmir population. Earlier a teacher by profession, research is a field that inspires a sense of enthusiasm and new learning opportunities. I follow the philosophy of Bhagavad Gita which states- In fact all actions are being performed by the modes of Prakruti (Primordial Nature). The fool, whose mind is deluded by egoism, thinks: “I am the doer.”", 
+            description: "I have done my masters in zoology and currently I am researching on various genetic and non-genetic factors and their association with prostate cancer development. I aim to identify the various genetic factors of prostate cancer and the link between non-genetic factors in the Jammu & Kashmir population.\n Earlier a teacher by profession, research is a field that inspires a sense of enthusiasm and new learning opportunities. I follow the philosophy of Bhagavad Gita which states- In fact all actions are being performed by the modes of Prakruti (Primordial Nature). The fool, whose mind is deluded by egoism, thinks: “I am the doer.”", 
             cvLink: "#", 
             scholarLink: "#" 
         },
@@ -108,7 +106,7 @@ export function People() {
             image: mem9, 
             labStatus: "Research Scholar", 
             academicQualification: "Ph.D. Ongoing", 
-            description: "Bachelors: (BSc Biotechnology) Shri Mata Vaishno Devi University\nMasters: (MSc Biotechnology) Shri Mata Vaishno Devi university\nIn my masters I, studied the effects of natural and synthetic drugs on senescent cells. Project Description: Cancer Genetics focusing on genetic mechanism of Gastric cancer and further looking for therapeutic advancements. Beside working as a researcher, I enjoy exploring different cuisines and seeking out new adventures.", 
+            description: "Bachelors: (BSc Biotechnology) Shri Mata Vaishno Devi University\nMasters: (MSc Biotechnology) Shri Mata Vaishno Devi university\nIn my masters I, studied the effects of natural and synthetic drugs on senescent cells. Project Description: Cancer Genetics focusing on genetic mechanism of Gastric cancer and further looking for therapeutic advancements.\n Beside working as a researcher, I enjoy exploring different cuisines and seeking out new adventures.", 
             cvLink: "#", 
             scholarLink: "#" 
         },
@@ -123,7 +121,6 @@ export function People() {
         }
     ];
 
-    // Added generic descriptions for Alumni to populate the modal
     const alumni = [
         { name: "Dr. Ashna Nagpal", image: alm1, labStatus: "Research Alumni", academicQualification: "Ph.D. Awarded", description: "Dr. Ashna Nagpal is a valued alumnus of our laboratory. She successfully completed her Ph.D. research under the guidance of Dr. Rakesh Kumar and has since moved on to contribute further to the scientific community." },
         { name: "Dr. Sonali Verma", image: alm2, labStatus: "Research Alumni", academicQualification: "Ph.D. Awarded", description: "Dr. Sonali Verma is a valued alumnus of our laboratory. She successfully completed her Ph.D. research under the guidance of Dr. Rakesh Kumar and has since moved on to contribute further to the scientific community." },
@@ -160,7 +157,7 @@ export function People() {
 
             <section className="max-w-6xl mx-auto px-4 py-12">
                 <h2 className="text-3xl text-[#000f3a] font-semibold mb-6 border-b-2 border-[#cccccc] pb-2">PRINCIPAL INVESTIGATOR</h2>
-                <div className="relative flex flex-col md:flex-row items-start gap-8 bg-gray-50 shadow rounded-lg p-6">
+                <div className="relative flex flex-col md:flex-row items-start gap-8 bg-gray-100 shadow rounded-lg p-6">
                     <img src={piImg} alt="Dr. Rakesh Kumar" className="w-48 h-auto bg-white border-1 border-gray-400 rounded-full shadow-md" />
                     <button onClick={() => setIsPiVisible(!isPiVisible)} className="absolute top-4 right-6 z-10 text-xl font-bold bg-[#003865] text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-[#000f3a] transition">
                         <span>{isPiVisible ? "−" : "+"}</span>
@@ -196,11 +193,11 @@ export function People() {
                 <h2 className="text-3xl text-[#000f3a] font-semibold mb-6 border-b-2 border-[#cccccc] pb-2">LAB MEMBERS</h2>
                 <div id="member-grid" className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
                     {members.map((member, memIndex) => (
-                        <div key={memIndex} className="flex flex-col bg-gray-100 rounded-lg shadow-md overflow-hidden aspect-[3/4] transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl cursor-pointer" onClick={() => openModal(memIndex, 'members')}>
+                        <div key={memIndex} className="flex flex-col rounded-lg bg-gray-100 shadow-md overflow-hidden aspect-[3/4] transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl cursor-pointer" onClick={() => openModal(memIndex, 'members')}>
                             <div className="flex-1 flex items-center justify-center p-4 min-h-0">
                                 <img src={member.image} alt={member.name} loading="lazy" className="w-full aspect-square object-cover border-1 border-gray-300 rounded-full shadow-md"/>
                             </div>
-                            <div className="p-3 text-center border-t border-gray-200">
+                            <div className="p-3 text-center border-t-2 border-gray-200">
                                 <h3 className="font-semibold text-[#000f3a] md:text-xl truncate" title={member.name}>{member.name}</h3>
                                 <h4 className="text-sm text-[#003865] md:text-base font-medium truncate" title={member.labStatus}>{member.labStatus}</h4>
                                 <h4 className="text-sm text-gray-800 md:text-base truncate" title={member.academicQualification}>{member.academicQualification}</h4>
@@ -218,11 +215,11 @@ export function People() {
                 {isAlumniVisible && (
                     <div id="alumni-list" className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
                         {alumni.map((alum, alumIndex) => (
-                            <div key={alumIndex} className="flex flex-col bg-gray-100 rounded-lg shadow-md overflow-hidden aspect-[3/4] transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl cursor-pointer" onClick={() => openModal(alumIndex, 'alumni')}>
+                            <div key={alumIndex} className="flex flex-col rounded-lg bg-gray-100 shadow-md overflow-hidden aspect-[3/4] transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl cursor-pointer" onClick={() => openModal(alumIndex, 'alumni')}>
                                 <div className="flex-1 flex items-center justify-center p-4 min-h-0">
                                     <img src={alum.image} alt={alum.name} loading="lazy" className="w-full aspect-square object-cover border-1 border-gray-300 rounded-full shadow-md"/>
                                 </div>
-                                <div className="p-3 text-center border-t border-gray-200">
+                                <div className="p-3 text-center border-t-2 border-gray-200">
                                     <h3 className="font-semibold text-[#000f3a] md:text-xl truncate" title={alum.name}>{alum.name}</h3>
                                     <h4 className="text-sm text-[#003865] md:text-base font-medium truncate" title={alum.labStatus}>{alum.labStatus}</h4>
                                     <h4 className="text-sm text-gray-800 md:text-base truncate" title={alum.academicQualification}>{alum.academicQualification}</h4>

@@ -6,7 +6,7 @@ export function Footer() {
           <div className="mb-6 md:mb-0">
             <a href="/" className="flex items-center">
               <img src="/logo.jpg" className="h-12 me-3" alt="Kumar Labs Logo" />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">KUMAR LABS</span>
+              <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">KUMAR'S LAB</span>
             </a>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
