@@ -76,7 +76,7 @@ function Slideshow({ img }) {
 
   {/* Paragraph */}
   <h3 className="text-sm sm:text-base md:text-lg mt-7 ml-5 md:ml-30 md:mr-30">
-    Kumar Lab focuses on understanding the patterns and underlying mechanisms of Cancer Biology, we are situated in Shri Mata Vaishno Devi University, Katra where we are proud to have created a creative, collaborative, and open-minded Research Lab.
+    Kumar's Lab focuses on understanding the patterns and underlying mechanisms of Cancer Biology, we are situated in Shri Mata Vaishno Devi University, Katra where we are proud to have created a creative, collaborative, and open-minded Research Lab.
   </h3>
 
   {/* Another Subheading */}

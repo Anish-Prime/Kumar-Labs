@@ -43,7 +43,7 @@ export function Navbar() {
   return (
     <div>
       {/* Desktop Navbar */}
-      <div className="hidden md:flex justify-between ml-3 mr-2 mt-7 mb-5">
+      <div className="hidden lg:flex justify-between ml-3 mr-2 mt-7 mb-5">
         <Flyout_content href="/" Flying_content={Null}>
           Kumar's Lab
         </Flyout_content>
@@ -65,7 +65,7 @@ export function Navbar() {
       </div>
 
       {/* Mobile Menu Button */}
-      <div className="md:hidden flex justify-between items-center px-4 py-3">
+      <div className="lg:hidden flex justify-between items-center px-4 py-3">
         <button
           onClick={() => setIsMobileOpen(true)}
           className="text-black"
